@@ -1,0 +1,22 @@
+<div class="item">
+<div class="productImage">
+<img src="https://rukminim1.flixcart.com/image/416/416/kae95e80/television/f/6/y/realme-tv-32-original-imafrz79pweqeafh.jpeg?q=70" onmouseover="showOnBigScreen('https://rukminim1.flixcart.com/image/416/416/kae95e80/television/f/6/y/realme-tv-32-original-imafrz79pweqeafh.jpeg?q=70')" onmouseout="showOffBigScreen()">
+</div>
+<div class="info">
+<p class="productName">Realme 80cm 32 inch LED Smart Android TV</p>
+<p class="subheading">Highlights</p>
+<ul>
+<li>Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube</li>
+<li>Operating System: Android (Google Assistant & Chromecast in-built)</li>
+<li>Resolution: HD Ready 1366 x 768 Pixels</li>
+<li>Sound Output: 24 W</li>
+<li>Refresh Rate: 60 Hz</li>
+</ul>
+</div>
+<div class="cc">
+<p class="productCost">₹13,999</p>
+<p class="productOldCost">₹14,999</p><span class="offer">6% off</span>
+<p class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i></p>
+<a href="#" class="cart">Cart<i class="fa fa-cart-plus"></i></a>
+</div>
+</div>

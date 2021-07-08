@@ -1,0 +1,797 @@
+<html>
+<head>
+<title>Lorem Ipsum</title>
+<style>
+*{padding:0;margin:0;list-style:none;text-decoration:none;letter-spacing:1px;font-family:'Sans-serif';user-select:none;color:#000;}
+body{background-color:white;width:500%;overflow-x:hidden;}
+header{width:100%;background-color:#fff;position:fixed;top:0;z-index:20;}
+header ul{width:100%;display:flex;align-items:center;justify-content:space-around;background-color:#fff;border-bottom:1px solid #888;}
+header ul li input{overflow:hidden;cursor:default;letter-spacing:1px;color:#000;width:450px;padding:15px 10px 15px 30px;font-size:16px;outline:none;border-radius:50vh;border:none;background-color:rgb(10,200,100,0.1);font-family:'Sans-serif';}
+header ul li button{cursor:pointer;margin:10px 20px;font-size:16px;outline:none;background-color:rgb(0,0,0,0);border:none;color:#555;position:relative;left:-60px;}
+header ul li button:hover{color:#000;}
+header ul li a{margin:0px 10px;cursor:pointer;color:#111;}
+header ul li a i{margin:0px 0px 0px 10px;color:#888;}
+header ul li img{height:75px;}
+ol{position:absolute;top:79px;border:1px solid #888;border-top:none;box-shadow:1px 1px 4px rgb(0,0,0,0.5);background-color:#fff;display:none;}
+header ul li #sub1{right:350px;}
+header ul li #sub2{right:60px;}
+#sub3{left:300px;}
+#sub4{left:490px;}
+#sub5{left:670px;}
+header ul li ol li{border-bottom:1px solid #ddd;}
+header ul li ol li:hover{transform:scale(1.01);}
+header ul li ol li a{margin:20px;display:inline-block;font-size:15px;}
+header ul li ol li a:hover{color:#195;}
+header ul li ol li a i{margin:0;margin-right:15px;}
+
+.container{width:20%;box-shadow:0px 2px 4px #ccc;}
+.container .part1{background-color:#fff;border-bottom:1px solid #ddd;box-shadow:0px 2px 4px #ccc;}
+.container .part1 ul{margin-top:80px;display:flex;justify-content:space-around;padding:10px 0px;}
+.container .part1 ul li a{cursor:pointer;color:#333;padding:10px 0px;display:inline-block;}
+.container .part1 ul li a i{margin:0px 0px 0px 10px;color:#888;}
+.container .part1 ul li ol{top:140px;z-index:10;}
+.container .part1 ul li ol li{border-bottom:1px solid #ddd;width:230px;}
+.container .part1 ul li ol li a{cursor:pointer;margin:10px 20px;}
+.container .part1 ul li ol li a i{position:absolute;right:15px;}
+.container .part1 ul li ol li a:hover{color:#195;}
+.container .part1 ul li ol li ul{display:flex;flex-direction:column;margin:0;padding:0;position:absolute;left:230px;background-color:#fff;top:0px;border:1px solid #888;border-top:none;display:none;box-shadow:1px 1px 4px rgb(0,0,0,0.5);}
+.container .part1 ul li ol li ul li{width:250px;}
+
+.container .part2{width:500%;height:80vh;z-index:0;box-shadow:0px 5px 10px #aaa;}
+.container .part2 img{width:20%;height:80vh;float:left;z-index:5;overflow:hidden;}
+.container .part2 #img{width:100%;position:relative;animation:slide 20s linear 0s infinite normal;margin-top:5px;}
+.container .part2 .icons {z-index:7;position:absolute;width:100%;}
+.container .part2 .icons button{position:absolute;top:33vh;z-index:10;background-color:#fff;color:#555;padding:20px 10px;border:none;outline:none;font-weight:normal;font-size:50px;}
+.container .part2 .icons button i{padding:0;margin:0;}
+.container .part2 .icons button i:hover{color:#000;cursor:pointer;}
+.container .part2 .icons #leftButton{left:0;}
+.container .part2 .icons #rightButton{right:0px;}
+@keyframes slide
+{
+0%{left:0%;}
+19%{left:-0%;}
+20%{left:-20%;}
+39%{left:-20%;}
+40%{left:-40%;}
+59%{left:-40%;}
+60%{left:-60%;}
+79%{left:-60%;}
+80%{left:-80%;}
+100%{left:-80%;}
+}
+
+.container .part3{border:1px solid #ddd;height:330px;margin:3vh 1%;width:98%;box-shadow:0px 4px 4px #aaa;}
+.container .part3 .head{align-items:center;color:#555;padding:10px 20px;border-bottom:1px solid #ddd;width:97%;display:flex;justify-content:space-between;}
+.container .part3 .head a{padding:10px 20px;background-color:#295;color:#fff;}
+.container .part3 .head a:hover{background-color:#285;}
+.container .part3 .head p{font-size:20px;color:#555;}
+.container .part3 .row{background-color:#fff;height:60%;padding:20px;display:flex;}
+.container .part3 .row .column{cursor:default;width:200px;background-color:#fff;margin: 1px 8px;height:100%;display:flex;justify-content:center;flex-direction:column;align-items:center;}
+.container .part3 .row .column img{max-width:170px;max-height:110px;padding:20px;cursor:pointer;}
+.container .part3 .row .column img:hover{cursor:pointer;transform:scale(1.05);}
+.container .part3 .row .column .info .productName{font-size:15px;letter-spacing:0px;padding:10px;text-align:center;}
+.container .part3 .row .column .info .details{padding:5px;font-size:10px;text-align:center;color:#888;}
+
+.container .part4{width:100%;height:50vh;margin:3vh 1%;}
+.container .part4 .part4a {float:left;width:49%;height:48vh;margin:1vh 0% 1vh 0%;border:1px solid #ddd;overflow:hidden;}
+.container .part4 .part4a .slide{max-width:24%;position:relative;display:flex;flex-direction:column;float:left;padding:0;align-items:center;}
+.container .part4 .part4a .slide img{cursor:pointer;height:40vh;float:left;margin:4vh 0px 4vh 25px;}
+.container .part4 .part4a .slide img:hover{transform:scale(1.02);}
+.container .part4 .slide:hover{animation:slideUp 9s ease 0s infinite normal;}
+.container .part4 .part4a .info{float:left;width:68%;height:92%;margin:3vh 4%;}
+.container .part4 .part4a .info p{font-size:18px;width:100%;padding:10px;}
+.container .part4 .part4a .info ul li{list-style-type:disc;list-style-position:inside;font-size:15px;padding:3px;margin-left:10px;}
+.container .part4 .part4a .info .explore{border:1px solid #295;margin-left:35%;margin-top:13px;box-shadow:2px 1px 5px #295;display:inline-block;padding:10px;background-color:#295;color:#fff;text-align:center;}
+.container .part4 .part4a .info .explore:hover{border:1px solid #295;background-color:#fff;color:#295;box-shadow:2px 1px 5px #555;}
+@keyframes slideUp
+{
+0%{top:0;}
+30%{top:0;}
+33%{top:-100%;}
+63%{top:-100%;}
+66%{top:-200%;}
+100%{top:-200%;}
+}
+
+footer{width:20%;background-color:#111;float:left;display:flex;justify-content:center;padding:3vh 0px;}
+footer .f1,footer .f2,footer .f3{display:flex;justify-content:center;width:25%;float:left;}
+footer .f1 ul,footer .f2 ul,footer .f3 ul{margin:1vh 0px;}
+footer .f1 ul .one,footer .f2 ul .one,footer .f3 ul .one{margin:1vh 0px;color:#aaa;}
+footer .f1 ul li a,footer .f2 ul li a,footer .f3 ul li a{cursor:pointer;color:#fff;padding:5px 0px;display:inline-block;}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+<ul>
+<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Qaeg_ueBNZkHN_B5DFkUXect3YMpFuKFfw&usqp=CAU"></li>
+<li><input type="text" onclick="collapseAll()" placeholder="Search for products, brands and more" autocomplete="off" spellcheck="false"><button><i class="fa fa-search" onclick="collapseAll()"></i></button></li>
+<li><a href="index.html" onclick = "collapseAll()">HOME</a></li>
+<li><a href="#" onclick = "collapseAll()">ABOUT</a></li>
+<li>
+<a onclick="expand('sub1','down_1','a1')" id="a1">CONTACT<i id="down_1" class="fa fa-chevron-down"></i></a>
+<ol id="sub1">
+<li><a href="https://www.facebook.com/dharmaraj.rathinavel.3"><i class="fa fa-facebook-square"></i>FACEBOOK</a></li>
+<li><a href="https://www.instagram.com/dharmaraj_rathinavel/"><i class="fa fa-instagram"></i>INSTAGRAM</a></li>
+<li><a href="mailto:dharmavkl2001@gmail.com"><i class="fa fa-google"></i>GMAIL</a></li>
+<li><a href="https://t.me/@d_2908"><i class="fa fa-telegram"></i>TELEGRAM</a></li>
+<li><a href="#"><i class="fa fa-twitter"></i>TWITTER</a></li>
+<li><a href="#"><i class="fa fa-youtube"></i>YOUTUBE</a></li>
+<li><a href="https://wa.me/6383392245"><i class="fa fa-whatsapp"></i>WHATSAPP</a></li>
+</ol>
+</li>
+<li><a href="#" onclick = "collapseAll()">TEAM</a></li>
+<li>
+<a onclick="expand('sub2','down_2','a2')" id="a2">ACCOUNT<i id="down_2" class="fa fa-chevron-down"></i></a>
+<ol id="sub2">
+<li><a href="createNewAccount.php"><i class="fa fa-user-plus"></i>CREATE ACCOUNT</a></li>
+<li><a href="login.php"><i class="fa fa-sign-in"></i>LOGIN</a></li>
+</ol>
+</li>
+<li><a href="cart.php" onclick = "collapseAll()">CART</a></li>
+</ul>
+</header>
+<div class="container">
+<div class="part1">
+<ul>
+<li><a href="#"onclick="collapseAll()">Mobiles</a></li>
+<li><a href="#">Fashion<i class="fa fa-chevron-down"></i></a></li>
+<li>
+<a onclick="expand('sub3','down_3','a3')" id="a3">Electronics<i id="down_3" class="fa fa-chevron-down"></i></a>
+<ol id="sub3">
+<li>
+<a onclick="expand('sub3a','down_3a','a3a')" id="a3a">Audio<i id="down_3a" class="fa fa-chevron-right"></i></a>
+<ul id="sub3a">
+<li><a href="#">Bluetooth Headphones</a></li>
+<li><a href="#">Wired Headphones</a></li>
+<li><a href="#">Bluetooth Speakers</a></li>
+<li><a href="#">Remote control</a></li>
+<li><a href="#">Home Theatres</a></li>
+<li><a href="#">DTH Set top box</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub3b','down_3b','a3b')" id="a3b">Gaming<i id="down_3b" class="fa fa-chevron-right"></i></a>
+<ul id="sub3b">
+<li><a href="#">Gaming Consoles</a></li>
+<li><a href="#">Gaming Mouse</a></li>
+<li><a href="#">Gaming Keyboards</a></li>
+<li><a href="#">Gamepads</a></li>
+<li><a href="#">Controllers</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub3c','down_3c','a3c')" id="a3c">Storage<i id="down_3c" class="fa fa-chevron-right"></i></a>
+<ul id="sub3c">
+<li><a href="#">Memory Card</a></li>
+<li><a href="#">Pendrives</a></li>
+<li><a href="#">HardDrive</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub3d','down_3d','a3d')" id="a3d">Laptop Accessories<i id="down_3d" class="fa fa-chevron-right"></i></a>
+<ul id="sub3d">
+<li><a href="#">Mouse</a></li>
+<li><a href="#">Routers</a></li>
+<li><a href="#">Laptop Keyboards</a></li>
+<li><a href="#">Data Cards</a></li>
+<li><a href="#">Laptop Battery</a></li>
+<li><a href="#">USB Gadgets</a></li>
+<li><a href="#">Security Software</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub3e','down_3e','a3e')" id="a3e">Camera<i id="down_3e" class="fa fa-chevron-right"></i></a>
+<ul id="sub3e">
+<li><a href="#">DSLR</a></li>
+<li><a href="#">Camera Lenses</a></li>
+<li><a href="#">Drone</a></li>
+<li><a href="#">Flashes</a></li>
+</ul>
+</li>
+<li><a href="#">Powerbank</a></li>
+<li>
+<a onclick="expand('sub3f','down_3f','a3f')" id="a3f">Mobile Accessories<i id="down_3f" class="fa fa-chevron-right"></i></a>
+<ul id="sub3f">
+<li><a href="#">Plain Cases</a></li>
+<li><a href="#">Designer Cases</a></li>
+<li><a href="#">Camera Lens Protector</a></li>
+<li><a href="#">Mobile Charges</a></li>
+<li><a href="#">Mobile Holder</a></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<a onclick="expand('sub4','down_4','a4')" id="a4">Home<i id="down_4" class="fa fa-chevron-down"></i></a>
+<ol id="sub4">
+<li>
+<a onclick="expand('sub4a','down_4a','a4a')" id="a4a">Furnishings<i id="down_4a" class="fa fa-chevron-right"></i></a>
+<ul id="sub4a">
+<li><a href="#">Bedsheets</a></li>
+<li><a href="#">Blankets</a></li>
+<li><a href="#">Floor coverings</a></li>
+<li><a href="#">Kitchen Linen sets</a></li>
+<li><a href="#">Table Linen sets</a></li>
+<li><a href="#">Bath Linen</a></li>
+<li><a href="#">Bed Linen</a></li>
+<li><a href="#">Pillows</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub4b','down_4b','a4b')" id="a4b">Living Room<i id="down_4b" class="fa fa-chevron-right"></i></a>
+<ul id="sub4b">
+<li><a href="#">TV Units</a></li>
+<li><a href="#">Sofa beds</a></li>
+<li><a href="#">Dining sets</a></li>
+<li><a href="#">Coffee Tables</a></li>
+<li><a href="#">Bookshelves</a></li>
+<li><a href="#">Shoe Racks</a></li>
+<li><a href="#">Bed Linen</a></li>
+<li><a href="#">Sofa sets</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub4c','down_4c','a4c')" id="a4c">Kitchen & Dining<i id="down_4c" class="fa fa-chevron-right"></i></a>
+<ul id="sub4c">
+<li><a href="#">Cookware</a></li>
+<li><a href="#">Barware</a></li>
+<li><a href="#">Bakeware</a></li>
+<li><a href="#">Grinders</a></li>
+<li><a href="#">Knives & cutters</a></li>
+<li><a href="#">Flasks & Bottles</a></li>
+<li><a href="#">Gas stoves</a></li>
+<li><a href="#">Hardjuicers</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub4d','down_4d','a4d')" id="a4d">Bedroom<i id="down_4d" class="fa fa-chevron-right"></i></a>
+<ul id="sub4d">
+<li><a href="#">Bed</a></li>
+<li><a href="#">Sidetables</a></li>
+<li><a href="#">Office Tables</a></li>
+<li><a href="#">Bookshelves</a></li>
+<li><a href="#">Pillows</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub4e','down_4e','a4e')" id="a4e">Home Decor<i id="down_4e" class="fa fa-chevron-right"></i></a>
+<ul id="sub4e">
+<li><a href="#">Lightings</a></li>
+<li><a href="#">Stickers & Wallpapers</a></li>
+<li><a href="#">Paintings</a></li>
+<li><a href="#">Clocks</a></li>
+<li><a href="#">Home frangrance</a></li>
+<li><a href="#">Flowers & Vases</a></li>
+<li><a href="#">Photoframes & Albums</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub4f','down_4f','a4f')" id="a4f">Electricals<i id="down_4f" class="fa fa-chevron-right"></i></a>
+<ul id="sub4f">
+<li><a href="#">Bulbs</a></li>
+<li><a href="#">Torches</a></li>
+<li><a href="#">Tubelights</a></li>
+<li><a href="#">Batteries</a></li>
+<li><a href="#">Wire</a></li>
+<li><a href="#">Socket</a></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<a onclick="expand('sub5','down_5','a5')" id="a5">Appliances<i id="down_5" class="fa fa-chevron-down"></i></a>
+<ol id="sub5">
+<li>
+<a onclick="expand('sub5a','down_5a','a5a')" id="a5a">Televisions<i id="down_5a" class="fa fa-chevron-right"></i></a>
+<ul id="sub5a">
+<li><a href="television3.php">below 24 inch</a></li>
+<li><a href="television3.php">26-32 inch</a></li>
+<li><a href="television3.php">34-46 inch</a></li>
+<li><a href="television3.php">Big Screen TVs</a></li>
+<li><a href="television3.php">Smart TVs</a></li>
+<li><a href="television3.php">4K UHD TVs</a></li>
+<li><a href="television3.php">OLED TVs</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub5b','down_5b','a5b')" id="a5b">Washing Machine<i id="down_5b" class="fa fa-chevron-right"></i></a>
+<ul id="sub5b">
+<li><a href="#">Front Load</a></li>
+<li><a href="#">Top Load</a></li>
+<li><a href="#">Dish Washers</a></li>
+<li><a href="#">Washer Dryers</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub5c','down_5c','a5c')" id="a5c">Air Conditioner<i id="down_5c" class="fa fa-chevron-right"></i></a>
+<ul id="sub5c">
+<li><a href="#">1 ton ACs</a></li>
+<li><a href="#">1.5 ton ACs</a></li>
+<li><a href="#">5 star ACs</a></li>
+<li><a href="#">Window ACs</a></li>
+<li><a href="#">Split ACs</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub5d','down_5d','a5d')" id="a5d">Refrigerators<i id="down_5d" class="fa fa-chevron-right"></i></a>
+<ul id="sub5d">
+<li><a href="#">Single door</a></li>
+<li><a href="#">Double door</a></li>
+<li><a href="#">Triple door</a></li>
+<li><a href="#">4 door</a></li>
+<li><a href="#">Mini Refrigerator</a></li>
+<li><a href="#">Convertible</a></li>
+</ul>
+</li>
+<li>
+<a onclick="expand('sub5e','down_5e','a5e')" id="a5e">Kitchen<i id="down_5e" class="fa fa-chevron-right"></i></a>
+<ul id="sub5e">
+<li><a href="#">Microwave Ovens</a></li>
+<li><a href="#">Juicer / mixer</a></li>
+<li><a href="#">Coffe makers</a></li>
+<li><a href="#">Sandwich makers</a></li>
+<li><a href="#">Pop Up Toasters</a></li>
+<li><a href="#">Chimneys</a></li>
+<li><a href="#">Electric Kettle</a></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a href="#" onclick="collapseAll()">Travel</a></li>
+<li><a href="#" onclick="collapseAll()">Grocery</a></li>
+<li><a href="#" onclick="collapseAll()">Top Offers</a></li>
+</ul>
+</div>
+<div class="part2">
+<div id="img"><img src="images/ad1b.jpg"><img src="images/ad2b.jpg"><img src="images/ad3b.png"><img src="images/ad4b.jpg"><img src="images/ad5b.jpeg"></div>
+<div class="icons"><button onclick="swipeLeft()" id="leftButton"><i class="fa fa-chevron-left"></i></button>
+<button onclick="swipeRight()" id="rightButton"><i class="fa fa-chevron-right"></i></button></div>
+</div>
+<div class="part3">
+<div class="head"><p>Best of Laptops</p><a href="#" class="viewall">VIEW ALL</a></div>
+<div class="row">
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kggviq80/computer/x/6/g/lenovo-original-imafwpajqjvfhrea.jpeg?q=70">
+<div class="info">
+<p class="productName">Lenovo Legion 5 Core i7 10th Gen</p>
+<p class="details">From <i class="fa fa-rupee"></i>29,949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kbfeljk0/computer/x/4/d/asus-original-imafss6cbuzbzpgf.jpeg?q=70">
+<div class="info">
+<p class="productName">Asus Core i3 10th Gen - Thin and Light Laptop</p>
+<p class="details">From <i class="fa fa-rupee"></i>34,499 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kd4uj680/computer/h/p/n/lenovo-original-imafu3hbz6axznmb.jpeg?q=70">
+<div class="info">
+<p class="productName">Lenovo Ideapad 3 Dual Core 3050U</p>
+<p class="details">From <i class="fa fa-rupee"></i>19,949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kk76wsw0/computer/h/j/o/lenovo-original-imafzhsyzryckmew.jpeg?q=70">
+<div class="info">
+<p class="productName">Lenovo Legion 5 Ryzen 7 Octa Core 4800H</p>
+<p class="details">From <i class="fa fa-rupee"></i>81,949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kj0bp8w0/computer/e/w/n/dell-original-imafyzfngg7bz6ze.jpeg?q=70">
+<div class="info">
+<p class="productName">Dell Vostro Core i3 10th Gen</p>
+<p class="details">From <i class="fa fa-rupee"></i>58,499 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kar44280/computer/q/c/z/asus-na-thin-and-light-laptop-original-imafs92tuvvttfmw.jpeg?q=70">
+<div class="info">
+<p class="productName">Asus VivoBook 5 Quad Core 3500U 2nd Gen</p>
+<p class="details">From <i class="fa fa-rupee"></i>19,999 only</p>
+</div>
+</div></a>
+</div>
+</div>
+<div class="part3">
+<div class="head"><p>Men's Footwear</p><a href="#" class="viewall">VIEW ALL</a></div>
+<div class="row">
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kggviq80-0/shoe/v/q/a/yonexsmashblack-yonex-black-original-imafwp3bfe4nfbmu.jpeg?q=50">
+<div class="info">
+<p class="productName">Smash Badminton Shoes For Men  (Black)</p>
+<p class="details">From <i class="fa fa-rupee"></i>249 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kdyus280-0/shoe/j/w/9/232061-7-skechers-black-red-original-imafur8hbf4n6h2s.jpeg?q=50">
+<div class="info">
+<p class="productName">SKECH-AIR STRATUS Casuals for Men(Black)</p>
+<p class="details">From <i class="fa fa-rupee"></i>999 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/k6l2vm80/shoe/7/d/q/51829-9-skechers-wml-original-imafpymgkr5xayud.jpeg?q=50">
+<div class="info">
+<p class="productName">Energy - Gym Shoes For Men(White)</p>
+<p class="details">From <i class="fa fa-rupee"></i>949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kg2l47k0-0/shoe/i/y/9/smash-yonex-navy-original-imafwduyfjgu2typ.jpeg?q=50">
+<div class="info">
+<p class="productName">SMASH Badminton Shoes For Men  (Navy)</p>
+<p class="details">From <i class="fa fa-rupee"></i>849 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kdrpksw0-0/shoe/s/c/e/193723-4-puma-high-risk-red-black-original-imafuhm8pznyqre9.jpeg?q=50">
+<div class="info">
+<p class="productName">Space Runner Running Shoes For Men  (Red)</p>
+<p class="details">From <i class="fa fa-rupee"></i>599 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kg2l47k0-0/shoe/n/4/m/smash-yonex-blue-original-imafwduymakqngjr.jpeg?q=50">
+<div class="info">
+<p class="productName">Smash Badminton Shoes For Men  (Blue)</p>
+<p class="details">From <i class="fa fa-rupee"></i>1299 only</p>
+</div>
+</div></a>
+</div>
+</div>
+<div class="part4">
+<div class="part4a">
+<div class="slide">
+<img src="https://rukminim1.flixcart.com/image/416/416/k8ytaq80/refrigerator-new/s/h/s/rr21t2h2wcb-hl-5-samsung-original-imafquwgzyuyxhmv.jpeg?q=70">
+<img src="https://rukminim1.flixcart.com/image/416/416/k8ytaq80/refrigerator-new/s/h/s/rr21t2h2wcb-hl-5-samsung-original-imafquwgvdnezz8z.jpeg?q=70">
+<img src="https://rukminim1.flixcart.com/image/416/416/k8ytaq80/refrigerator-new/s/h/s/rr21t2h2wcb-hl-5-samsung-original-imafquwgt6q9c4hb.jpeg?q=70">
+</div>
+<div class="info">
+<p class="productName">Samsung 198 L Direct Cool Single Door 5 Star (2020) Refrigerator with Base Drawer  (Camellia Black, RR21T2H2WCB/HL)</p>
+<ul>
+<li>198 L : Good for couples and small families</li>
+<li>Digital Inverter Compressor</li>
+<li>5 Star : For Energy savings up to 55%</li>
+<li>Direct Cool : Economical, consumes less electricity, requires manual defrosting</li>
+<li>Base Stand with Drawer : For storing items that don't need cooling (Onion, Potato etc.)</li>
+</ul>
+<a href="#" class="explore">EXPLORE</a>
+</div>
+</div>
+<div class="part4a">
+<div class="slide">
+<img src="https://rukminim1.flixcart.com/image/416/416/kklhbbk0/mobile/e/c/a/m3-mzb087cin-poco-original-imafzxf9jvexfgej.jpeg?q=70">
+<img src="https://rukminim1.flixcart.com/image/416/416/kklhbbk0/mobile/5/4/p/m3-mzb087cin-poco-original-imafzxf92cbfbnyq.jpeg?q=70">
+<img src="https://rukminim1.flixcart.com/image/416/416/kklhbbk0/mobile/p/f/c/m3-mzb087cin-poco-original-imafzxf9ahgpewtp.jpeg?q=70">
+</div>
+<div class="info">
+<p class="productName">POCO M3 (Yellow, 64 GB)  (6 GB RAM)</p>
+<ul>
+<li>6GB RAM | 64GB ROM | Expandable upto 512GB</li>
+<li>16.59 cm (6.53 inch) Full HD+ Display</li>
+<li>48MP + 2MP + 2MP | 8MP Front Camera</li>
+<li>6000 mAh Lithium-ion Polymer Battery</li>
+<li>Qualcomm Snapdragon 662 Processor</li>
+<li>Display Size - 16.59 cm (6.53 inch)</li>
+<li>Resolution - 2340 x 1080 Pixels</li>
+<li>Resolution Type - Full HD+</li>
+</ul>
+<a href="#" class="explore" style="margin-top:20px;">EXPLORE</a>
+</div>
+</div>
+</div>
+<div class="part3">
+<div class="head"><p>Best of Television</p><a href="television1.php" class="viewall">VIEW ALL</a></div>
+<div class="row">
+<a href="television1.php"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/k1xwcy80/television/v/p/m/samsung-ua65ru8000kxxl-original-imafhc5jhmgwbepj.jpeg?q=70">
+<div class="info">
+<p class="productName">Samsung 163cm 65 inch Ultra HD(4K)</p>
+<p class="details">From <i class="fa fa-rupee"></i>16,799 only</p>
+</div>
+</div></a>
+<a href="television1.php"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kae95e80/television/f/6/y/realme-tv-32-original-imafrz79pweqeafh.jpeg?q=70">
+<div class="info">
+<p class="productName">Realme 80cm 32 inch LED Smart Android TV</p>
+<p class="details">From <i class="fa fa-rupee"></i>13,999 only</p>
+</div>
+</div></a>
+<a href="television1.php"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kc54ivk0/television/r/q/g/mi-l43m4-4ain-original-imaftc5fy6bfmhyb.jpeg?q=70">
+<div class="info">
+<p class="productName">Mi 4A PRO 80cm 32 inch Smart Android TV</p>
+<p class="details">From <i class="fa fa-rupee"></i>56,949 only</p>
+</div>
+</div></a>
+<a href="television1.php"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kesv0y80/television/3/e/m/panasonic-th-40hs450dx-original-imafvejq988merwd.jpeg?q=70">
+<div class="info">
+<p class="productName">Panasonic 100cm 40 inch Smart Android TV</p>
+<p class="details">From <i class="fa fa-rupee"></i>27,449 only</p>
+</div>
+</div></a>
+<a href="television1.php"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kfbfr0w0/television/m/f/g/samsung-ua43tu7200kxxl-original-imafvs8yrbkd5hm2.jpeg?q=70">
+<div class="info">
+<p class="productName">Realme 108cm 43 inch Smart Android TV</p>
+<p class="details">From <i class="fa fa-rupee"></i>51,999 only</p>
+</div>
+</div></a>
+<a href="television1.php"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kdyus280/television/g/d/q/lg-32lm565bpta-32lm565bpta-original-imafurgkdrjfggbw.jpeg?q=70">
+<div class="info">
+<p class="productName">LG 80cm 32 inch Smart TV 2020 Edition</p>
+<p class="details">From <i class="fa fa-rupee"></i>21,299 only</p>
+</div>
+</div></a>
+</div>
+</div>
+<div class="part3">
+<div class="head"><p>Best of Smart Phones</p><a href="#" class="viewall">VIEW ALL</a></div>
+<div class="row">
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kfpq5jk0/mobile/e/k/z/infinix-hot-10-x682b-original-imafw43dphkyztfk.jpeg?q=70">
+<div class="info">
+<p class="productName">Infinix 10 (Obsidian Black, 6GB RAM)</p>
+<p class="details">From <i class="fa fa-rupee"></i>20,449 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kesv0y80/mobile/u/h/m/redmi-9i-mzb0818in-original-imafveh4xva2fes2.jpeg?q=70">
+<div class="info">
+<p class="productName">Redmi 9i (Nature Green, 4GB RAM)</p>
+<p class="details">From <i class="fa fa-rupee"></i>34,499 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kdoup3k0/mobile/t/s/9/oppo-a52-cph2061-original-imafujhyzrexfeaj.jpeg?q=70">
+<div class="info">
+<p class="productName">OPPO A52 (Twilight Black, 4GB RAM)</p>
+<p class="details">From <i class="fa fa-rupee"></i>19,949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/ke0a7ww0/mobile/4/r/e/mi-redmi-9-prime-m2004j191-original-imafushhfhy3tbp9.jpeg?q=70">
+<div class="info">
+<p class="productName">Redmi 9 Prime (Mint Green, 4GB RAM)</p>
+<p class="details">From <i class="fa fa-rupee"></i>81,949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kfvfwy80/mobile/j/h/t/poco-c3-mzb07riin-original-imafw8qbg63kvngr.jpeg?q=70">
+<div class="info">
+<p class="productName">POCO C3 (Arctic Blue, 4GB RAM)</p>
+<p class="details">From <i class="fa fa-rupee"></i>58,499 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kfbfr0w0/mobile/y/f/s/realme-narzo-20a-rmx2050-original-imafvswuehda4esc.jpeg?q=70">
+<div class="info">
+<p class="productName">Realme Narzo 20A (Silver 4GB RAM)</p>
+<p class="details">From <i class="fa fa-rupee"></i>9,999 only</p>
+</div>
+</div></a>
+</div>
+</div>
+<div class="part4">
+<div class="part4a">
+<div class="slide">
+<img src="https://rukminim1.flixcart.com/image/800/960/k070zgw0/shirt/a/j/r/xl-db-royalblue-black-x-men-original-imafkfm4hhrx96zq.jpeg?q=50">
+<img src="https://rukminim1.flixcart.com/image/800/960/k070zgw0/shirt/s/y/f/s-db-darkpink-x-men-original-imafkfm45rkvqf8d.jpeg?q=50">
+<img src="https://rukminim1.flixcart.com/image/800/960/k070zgw0/shirt/h/z/2/xxl-db-black-x-men-original-imafkfmyf6exvb2z.jpeg?q=50">
+</div>
+<div class="info">
+<p class="productName">Men Slim-Fit Solid Button Down Collar Casuals ( Blue | Rose | Black ) - From <i class="fa fa-rupee"></i>494</p>
+<ul>
+<li>100% Cotton | Imported | Button closure | Machine Wash</li>
+<li>Contrasting corduroy lined collar and cuffs</li>
+<li>Great look and lasting durability</li>
+<li>Left chest pocket with pencil slot and button closure</li>
+<li>Double pleat back for ease of movement, Adjustable cuffs</li>
+</ul>
+<a href="#" class="explore">EXPLORE</a>
+</div>
+</div>
+<div class="part4a">
+<div class="slide">
+<img src="https://rukminim1.flixcart.com/image/800/960/k62i5jk0/sari/d/y/t/free-svf11trast-blouse-jabali-enterprise-original-imaempjvhdn5bfem.jpeg?q=50">
+<img src="https://rukminim1.flixcart.com/image/800/960/k62i5jk0/sari/c/y/y/free-svf11ntrast-blouse-jabali-enterprise-original-imaempjxexhzyejw.jpeg?q=50">
+<img src="https://rukminim1.flixcart.com/image/800/960/k612pow0/sari/d/j/y/free-svf1164-3-awomens-latest-georgette-dailywear-partwear-original-imaempzvhuyqp3ut.jpeg?q=50">
+</div>
+<div class="info">
+<p class="productName">Paisley, Striped, Floral Print Daily Wear Georgette Saree ( Red | Green | Yellow)</p>
+<ul>
+<li>Saree Fabric & Blouse Fabric : Banarasi Kanjivaram Art Silk</li>
+<li>Saree Color: Yellow | Blouse Color: Green</li>
+<li>Saree Length : 5.5m, Blouse Length : 0.8m</li>
+<li>Saree Work : Woven , Blouse Work : Woven</li>
+<li>Saree Comes With Unstitched Blouse peice,which is attached with end of the saree only.Buyer have to cut blouse part from the saree.</li>
+</ul>
+<a href="#" class="explore" style="margin-top:20px;">EXPLORE</a>
+</div>
+</div>
+</div>
+<div class="part3">
+<div class="head"><p>Best of Watches</p><a href="#" class="viewall">VIEW ALL</a></div>
+<div class="row">
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/ked56kw0-0/watch/j/u/j/boys-and-men-s-exclusive-men101-black-daniel-jubile-original-imafv25fzzz6dgsq.jpeg?q=50">
+<div class="info">
+<p class="productName">Men's Exclusive Black Analog Watch</p>
+<p class="details">From <i class="fa fa-rupee"></i>1,449 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kkprmvk0/watch/a/k/b/anlg-428-blue-blu-analogue-original-imafzzrwtzmvqnsn.jpeg?q=50">
+<div class="info">
+<p class="productName">ANLG-428 All Blue Series Analog Watch</p>
+<p class="details">From <i class="fa fa-rupee"></i>499 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kbl4cy80/watch/r/m/o/skm-1155-blue-skmei-original-imafsvz4jx3zvqd9.jpeg?q=50">
+<div class="info">
+<p class="productName">skm-1155-Blue New Analog-Digital Watch</p>
+<p class="details">From <i class="fa fa-rupee"></i>949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/jezzukw0/watch/2/t/c/77085pp03-sonata-original-imaf3kgx8ft5srkq.jpeg?q=50">
+<div class="info">
+<p class="productName">Sonata 77085PP03 Volt Analog Watch</p>
+<p class="details">From <i class="fa fa-rupee"></i>1,949 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/kfu0h3k0-0/watch/k/0/d/1251-black-chronograph-with-dual-time-skmei-original-imafw6rfjpxthwgk.jpeg?q=50">
+<div class="info">
+<p class="productName">Black Chronograph Digital Digital Watch</p>
+<p class="details">From <i class="fa fa-rupee"></i>1,199 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/800/960/k7z3afk0/watch/f/j/n/lcs-4116-lois-caron-original-imafq3k8rbbbybgz.jpeg?q=50">
+<div class="info">
+<p class="productName">LCS-41 Date and Day - Analog Watch</p>
+<p class="details">From <i class="fa fa-rupee"></i>9,999 only</p>
+</div>
+</div></a>
+</div>
+</div>
+<div class="part3">
+<div class="head"><p>Best of Wall Clocks</p><a href="#" class="viewall">VIEW ALL</a></div>
+<div class="row">
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kchzhjk0/wall-clock/q/n/c/active-series-a32-cola-wall-clock-active-a32-analog-art-amori-original-imafthg3za22es2z.jpeg?q=70">
+<div class="info">
+<p class="productName">Art Amori Analog 38 cm X 45 cm Wall Clock</p>
+<p class="details">From <i class="fa fa-rupee"></i>749 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kihqz680/wall-clock/h/z/z/round-clock-103-analog-a3-box-original-imafyayhhphac8ct.jpeg?q=70">
+<div class="info">
+<p class="productName">A3 BOX Analog 31 cm X 31 cm Wall Clock</p>
+<p class="details">From <i class="fa fa-rupee"></i>399 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/wall-clock/e/w/r/ajanta-digital-clock-olc-302-digital-ajanta-since-1971-original-imaeru8z4qx9fzxy.jpeg?q=70">
+<div class="info">
+<p class="productName">Ajanta Digital 25.4 cm X 25.4 cm Wall Clock</p>
+<p class="details">From <i class="fa fa-rupee"></i>449 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/k7p37gw0/wall-clock/9/h/p/1577-red-1577-red-analog-oreva-original-imafpvmfkvxdghrz.jpeg?q=70">
+<div class="info">
+<p class="productName">Oreva Analog 25.5 cm X 25.5 cm Wall Clock</p>
+<p class="details">From <i class="fa fa-rupee"></i>849 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kingqkw0-0/wall-clock/d/g/l/wall-clock-twclck013t-analog-timex-original-imafyehbsuahfpsz.jpeg?q=70">
+<div class="info">
+<p class="productName">Timex Analog 30.5 cm X 30.5 cm Wall Clock</p>
+<p class="details">From <i class="fa fa-rupee"></i>799 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/jsqe7bk0/wall-clock/g/y/z/gold-tri-ganesh-gold-tri-analog-mks-original-imafe8h3kgyfyhh7.jpeg?q=70">
+<div class="info">
+<p class="productName">MKS Analog 28 cm X 28 cm Wall Clock</p>
+<p class="details">From <i class="fa fa-rupee"></i>1,999 only</p>
+</div>
+</div></a>
+</div>
+</div>
+<div class="part3">
+<div class="head"><p>Sports Products</p><a href="#" class="viewall">VIEW ALL</a></div>
+<div class="row">
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kf0087k0/sport-glove/g/f/p/left-and-right-winter-riding-gloves-waterproof-touch-screen-original-imafvk6u9qtsthgk.jpeg?q=70">
+<div class="info">
+<p class="productName">Waterproof & Touch Screen Gloves</p>
+<p class="details">From <i class="fa fa-rupee"></i>899 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kbv4fww0/bat/g/z/z/950-1100-6-virat-kohli-bat-size-6-for-10-13-years-boys-girls-original-imaft3mdegq5zrja.jpeg?q=70">
+<div class="info">
+<p class="productName">MRF Genius Virat Kohli bat(Size-6)</p>
+<p class="details">From <i class="fa fa-rupee"></i>499 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kay9bbk0/ball/9/y/v/300-350-4-21-hi-grip-1-vb-482-volleyball-nivia-original-imafseqyvgjypt3y.jpeg?q=70">
+<div class="info">
+<p class="productName">Nivia Hi-Grip Volleyball - Size:4</p>
+<p class="details">From <i class="fa fa-rupee"></i>849 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/jxrv4i80/kit/u/f/d/r201-combo-2-badminton-racquet-with-shuttle-ad-bk-2-adrenex-by-original-imafg2czhqckfkfw.jpeg?q=70">
+<div class="info">
+<p class="productName">Badminton Racquet with Shuttle Badminton</p>
+<p class="details">From <i class="fa fa-rupee"></i>299 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/k5zn9u80/joystick/h/4/t/computer-plaza-ps-2-wired-controller-compatible-with-playstation-original-imafzky25sfcgpmf.jpeg?q=70">
+<div class="info">
+<p class="productName">PS2 Wired Controller Compatible Joystick</p>
+<p class="details">From <i class="fa fa-rupee"></i>1,199 only</p>
+</div>
+</div></a>
+<a href="#"><div class="column">
+<img src="https://rukminim1.flixcart.com/image/416/416/kjkbv680-0/ball/a/6/8/420-470-storm-22-5-1-nivia354or-football-nivia-original-imafz3upfhhqxygq.jpeg?q=70">
+<div class="info">
+<p class="productName">Nivia Storm Football - Size:5</p>
+<p class="details">From <i class="fa fa-rupee"></i>949 only</p>
+</div>
+</div></a>
+</div>
+</div>
+
+</div>
+<footer>
+<div class="f1">
+<ul>
+<li class="one">ABOUT</li>
+<li><a hef="#">Contact Us</a></li>
+<li><a hef="#">About Us</a></li>
+<li><a hef="#">Careers</a></li>
+<li><a hef="#">Lorem Ipsum Stories</a></li>
+<li><a hef="#">Press</a></li>
+<li><a hef="#">Lorem Ipsum Wholesale</a></li>
+</ul>
+</div>
+<div class="f2">
+<ul>
+<li class="one">HELP</li>
+<li><a hef="#">Payments</a></li>
+<li><a hef="#">Shipping</a></li>
+<li><a hef="#">Cancellation & Returns</a></li>
+<li><a hef="#">FAQ</a></li>
+<li><a hef="#">Report Infringement</a></li>
+</ul>
+</div>
+<div class="f3">
+<ul>
+<li class="one">POLICY</li>
+<li><a hef="#">Return Policy</a></li>
+<li><a hef="#">Terms Of Use</a></li>
+<li><a hef="#">Security</a></li>
+<li><a hef="#">Privacy</a></li>
+<li><a hef="#">Sitemap</a></li>
+<li><a hef="#">EPR Compliance</a></li>
+</ul>
+</div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
